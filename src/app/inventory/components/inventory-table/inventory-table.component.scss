@@ -1,0 +1,26 @@
+.mat-table {
+  width: 100%;
+  & th:first-child {
+    min-width: 12rem;
+  }
+
+  & th:last-child,
+  td:last-child {
+    min-width: 2rem;
+    max-width: 2rem;
+    padding-right: 1.2rem;
+  }
+
+  & td i {
+    font-size: 1.5rem;
+  }
+
+  & th {
+    min-width: 20rem;
+  }
+
+  & tr.mat-row:hover {
+    background-color: rgba(12, 36, 51, 0.04);
+    cursor: pointer;
+  }
+}

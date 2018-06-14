@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+  <title>database</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="database" fill="#FFFFFF" fill-rule="nonzero">
+      <path
+        d="M18,17.5 C18,18.881 13.971,20 9,20 C4.029,20 0,18.881 0,17.5 L0,14.082 C2.646,15.294 5.741,16 9,16 C12.259,16 15.354,15.294 18.138,14.026 L18,17.5 Z M9,14 C4.029,14 0,12.881 0,11.5 L0,8.083 C2.646,9.294 5.741,10 9,10 C12.259,10 15.354,9.294 18.138,8.027 L18,11.5 C18,12.881 13.971,14 9,14 Z M9,8 C2.337,8 0,6.25 0,6.25 L0,2.5 C0,1.119 4.029,0 9,0 C13.971,0 18,1.119 18,2.5 L18,6.25 C18,6.25 15.663,8 9,8 Z"
+        id="Shape"></path>
+    </g>
+  </g>
+</svg>

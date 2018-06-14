@@ -1,0 +1,31 @@
+.item-details {
+  font-size: 1.6rem;
+  width: 100%;
+  min-height: 30rem;
+  background-color: #fff;
+  color: #2d323e;
+  padding: 2.4rem;
+  border-left: 1px solid rgba(0, 0, 0, .12);
+}
+
+.details-header {
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+
+.save-item-button {
+  position: absolute;
+  right: 24px;
+  bottom: -27.5px;
+  transition: all .2s ease;
+  outline: none;
+
+  &:hover {
+    background-color: darken(#f44336, 5%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}

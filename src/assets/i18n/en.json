@@ -1,0 +1,21 @@
+{
+  "TITLE.ITEMS": "Items inventory",
+  "TITLE.NEW_PRODUCT": "Create new product",
+  "TITLE.PRODUCT_INFO": "Enter product info",
+  "TITLE.EDIT_PRODUCT": "Edit product",
+  "TITLE.HEADER_INVENTORY": "Items inventory",
+
+  "LABEL.DESCRIPTION": "Description",
+  "LABEL.NO_DATA": "No data yet",
+  "LABEL.EURO_SIGN": "€",
+  "LABEL.ADD_SUCCESS": "Success!",
+  "LABEL.PRICE": "Price",
+  "LABEL.NO_CATEGORY": "No category provided",
+
+  "PLACEHOLDER.PRODUCT_NAME": "Product name",
+  "PLACEHOLDER.PRICE": "Selling price",
+  "PLACEHOLDER.CATEGORY": "Choose a category",
+  "PLACEHOLDER.DESCRIPTION": "Description",
+  "BUTTON.ADD_PRODUCT": "Add Product",
+  "BUTTON.SAVE": "Save"
+}

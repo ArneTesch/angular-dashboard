@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "T-shirt",
+      "description": "A basic t-shirt",
+      "categoryId": 2,
+      "price": 20,
+      "image": "./src/assets/images/t-shirt.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Sweater",
+      "description": "A sweater",
+      "categoryId": 2,
+      "price": 30,
+      "image": "./src/assets/images/sweater.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Trousers",
+      "description": "A basic trousers",
+      "categoryId": 3,
+      "price": 50,
+      "image": "./src/assets/images/trousers.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Shoes",
+      "description": "A basic pair of shoes",
+      "categoryId": 1,
+      "price": 72,
+      "image": "./src/assets/images/shoes.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Sandals",
+      "description": "A basic pair of sandals",
+      "categoryId": 1,
+      "price": 20,
+      "image": "./src/assets/images/sandals.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Shorts",
+      "description": "A basic short",
+      "categoryId": 3,
+      "price": 50,
+      "image": "./src/assets/images/shorts.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Belt",
+      "description": "Leather belt",
+      "categoryId": 5,
+      "price": 45,
+      "image": "./src/assets/images/belt.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Boxershorts",
+      "description": "Boxer",
+      "categoryId": 4,
+      "price": 15
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "shoes"
+    },
+    {
+      "id": 2,
+      "name": "tops"
+    },
+    {
+      "id": 3,
+      "name": "bottoms"
+    },
+    {
+      "id": 4,
+      "name": "underwear"
+    },
+    {
+      "id": 5,
+      "name": "accessories"
+    }
+  ]
+}

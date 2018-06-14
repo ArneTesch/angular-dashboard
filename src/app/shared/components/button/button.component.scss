@@ -1,0 +1,125 @@
+button {
+  border-radius: 2px;
+  border: none;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
+  & i.right {
+    margin-left: .3rem;
+  }
+
+  & i.left {
+    margin-right: .3rem;
+  }
+}
+
+button.default {
+  background-color: #222222;
+  color: #fafafa;
+
+  &:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    background-color: darken(#222, 10%);
+  }
+}
+
+button.cancel {
+  background-color: transparent;
+  color: #DC2026;
+  padding: 0;
+  box-shadow: none;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #DC2026;
+    transition: width .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &:hover:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #DC2026;
+  }
+}
+
+button.success {
+  background-color: #2ecc71;
+  color: #fafafa;
+
+  &:hover {
+    background-color: lighten(#2ecc71, 3%);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+button.circle {
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4rem;
+
+  & i {
+    margin-left: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+button.add {
+  background-color: #222222;
+  color: #fafafa;
+
+  &:hover {
+    background-color: darken(#222, 20%);
+  }
+}
+
+button.edit {
+  background-color: #222222;
+  color: #fafafa;
+
+  &:hover {
+    background-color: darken(#222, 10%);
+  }
+}
+
+button.full-width {
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+    0 1px 7px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    background-color: darken(#222, 10%);
+  }
+}

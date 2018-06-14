@@ -1,0 +1,67 @@
+// @import "../../../vars";
+
+.topbar {
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+
+  @media (min-width: 768px) {
+    padding-left: 26rem;
+  }
+
+  & h1 {
+    margin: 0 auto;
+    color: #2d323e;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+    font-size: 1.8rem;
+
+    @media (min-width: 768px) {
+      padding-left: 0;
+      font-size: 2.4rem;
+    }
+  }
+
+  .m-toggle-sidebar {
+    visibility: visible;
+    width: 7rem;
+    height: 7rem;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & i {
+      color: white;
+      transition: all .2s ease;
+    }
+
+    @media (min-width: 768px) {
+      visibility: hidden;
+    }
+  }
+
+  .settings {
+    width: 7rem;
+    height: 7rem;
+    background-color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    align-self: flex-end;
+    border-left: 1px solid rgba(0,0,0, .12);
+
+    & i {
+      color: #2d323e;
+      transition: all .2s ease;
+    }
+  }
+}
