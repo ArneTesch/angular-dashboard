@@ -1,8 +1,8 @@
 {
   "TITLE.ITEMS": "Items inventory",
-  "TITLE.NEW_PRODUCT": "Create new product",
-  "TITLE.PRODUCT_INFO": "Enter product info",
-  "TITLE.EDIT_PRODUCT": "Edit product",
+  "TITLE.NEW_ITEM": "Create new item",
+  "TITLE.ITEM_INFO": "Enter item info",
+  "TITLE.EDIT_ITEM": "Edit item",
   "TITLE.HEADER_INVENTORY": "Items inventory",
 
   "LABEL.DESCRIPTION": "Description",
@@ -11,11 +11,12 @@
   "LABEL.ADD_SUCCESS": "Success!",
   "LABEL.PRICE": "Price",
   "LABEL.NO_CATEGORY": "No category provided",
+  "LABEL.EMPTY_TABLE": "No data provided",
 
-  "PLACEHOLDER.PRODUCT_NAME": "Product name",
+  "PLACEHOLDER.ITEM_NAME": "Item name",
   "PLACEHOLDER.PRICE": "Selling price",
   "PLACEHOLDER.CATEGORY": "Choose a category",
   "PLACEHOLDER.DESCRIPTION": "Description",
-  "BUTTON.ADD_PRODUCT": "Add Product",
+  "BUTTON.ADD_ITEM": "Add item",
   "BUTTON.SAVE": "Save"
 }

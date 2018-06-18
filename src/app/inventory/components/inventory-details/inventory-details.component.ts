@@ -20,7 +20,7 @@ import { Category } from '../../../entities/category.entity';
         </button>
       </div>
       <app-text-input
-        labelText="{{ 'PLACEHOLDER.PRODUCT_NAME' | translate}}"
+        labelText="{{ 'PLACEHOLDER.ITEM_NAME' | translate}}"
         [control]="itemForm.get('name')"
       ></app-text-input>
       <app-autocomplete

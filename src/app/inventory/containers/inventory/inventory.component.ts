@@ -18,7 +18,7 @@ import { ItemSandbox } from '../../sandboxes/items.sandbox';
     <div class="container">
       <app-inventory-table
         [items]="itemsWithCategories$ | async"
-        (rowSelected)="showDetails($event)"
+        (selectRow)="showDetails($event)"
       ></app-inventory-table>
       <app-inventory-details
         [item]="selectedItem"

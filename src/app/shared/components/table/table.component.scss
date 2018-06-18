@@ -1,0 +1,85 @@
+.table-main {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0 1.4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+  text-align: left;
+}
+
+.table-head .table-header-row {
+  align-items: center;
+  height: 5.5rem;
+}
+
+.header-cell {
+  font-size: 1.2rem;
+  color: rgba($color: #000000, $alpha: 0.54);
+  padding: 0 1.4rem;
+
+  &:hover .header-sort {
+    opacity: 1;
+  }
+}
+
+.header-sort {
+  margin-bottom: -3px;
+  font-size: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: #000000;
+}
+
+.table-row:hover {
+  background-color: rgba($color: #0e2a3b, $alpha: 0.05);
+  cursor: pointer;
+}
+
+.table-cell,
+.table-actions,
+.row-actions {
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+  color: rgba($color: #000000, $alpha: 0.54);
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+
+.table-actions,
+.row-actions {
+  text-align: right;
+}
+
+.table-actions {
+  color: white;
+  overflow: visible;
+  width: 5.5rem;
+  height: 5.5rem;
+
+  & i {
+    background-color: #f44336;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    padding: 0;
+    transform: translate(1px, 50%);
+  }
+}
+
+.table-cell {
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  color: rgba($color: #000000, $alpha: 0.87);
+}

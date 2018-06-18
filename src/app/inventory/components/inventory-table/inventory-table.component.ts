@@ -1,51 +1,67 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { Item } from '../../../entities/item.entity';
+import { TableActionConfigs } from '../../../shared/types/table-config.type';
+import {
+  RowActionConfigs,
+  TableColumnsConfig,
+} from '../../../shared/types/table-config.type';
 
 @Component({
   selector: 'app-inventory-table',
   template: `
-    <table mat-table #table [dataSource]="items" class="mat-table">
-
-      <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef>N°</th>
-        <td mat-cell *matCellDef="let item">{{ item.id }}</td>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let item">{{ item.name }}</td>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef>Price</th>
-        <td mat-cell *matCellDef="let item">{{ item.price }}</td>
-      </ng-container>
-
-      <!-- actions Column -->
-      <ng-container matColumnDef="actions">
-        <th mat-header-cell *matHeaderCellDef></th>
-        <td mat-cell *matCellDef="let item">
-          <i class="material-icons pointer">edit</i>
-        </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="rowSelected.emit(row)"></tr>
-    </table>
+  <app-table
+  [tableColumns]="tableColumns"
+  [items]="items"
+  [rowActions]="rowActions"
+  [tableActions]="tableActions"
+  (selectRow)="showDetails($event)"
+  emptyTableLabel="LABEL.EMPTY_TABLE"></app-table>
   `,
   styleUrls: ['./inventory-table.component.scss'],
 })
 export class InventoryTableComponent implements OnInit {
   @Input() items: Array<Item>;
 
-  @Output() rowSelected = new EventEmitter<Item>();
+  @Output() selectRow = new EventEmitter<Item>();
 
-  displayedColumns = ['position', 'name', 'price', 'actions'];
+  tableColumns: TableColumnsConfig = <TableColumnsConfig>[
+    {
+      property: 'name',
+      type: 'string',
+      label: 'Name',
+      sorting: true,
+    },
+    {
+      property: 'description',
+      type: 'string',
+      label: 'Description',
+      sorting: false,
+    },
+    {
+      property: 'price',
+      type: 'string',
+      label: 'Price',
+      sorting: true,
+    },
+  ];
+
+  rowActions: RowActionConfigs = [
+    {
+      type: 'more',
+      label: 'TITLE.SEE_MORE',
+      icon: 'chevron_right',
+      visible: _ => true,
+    },
+  ];
+
+  tableActions: TableActionConfigs = [];
 
   constructor() {}
 
   ngOnInit() {}
+
+  showDetails(item: Item) {
+    this.selectRow.emit(item);
+  }
 }
