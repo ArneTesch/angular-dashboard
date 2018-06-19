@@ -5,6 +5,7 @@ import {
   TableColumnsConfig,
 } from '../../types';
 import { orderItems } from '../../utils';
+import { Item } from '../../../entities/item.entity';
 
 @Component({
   selector: 'app-table',
@@ -38,8 +39,8 @@ import { orderItems } from '../../utils';
         </thead>
         <tbody>
         <ng-container *ngFor="let item of items">
-          <tr
-          (click)="selectRow.emit(item)"
+          <tr (click)="onClick(item)"
+          [ngClass]="{'active': activeRow === item}"
           class="table-row">
             <td *ngFor="let config of tableColumns" class="table-cell">
               <app-table-cell
@@ -95,6 +96,7 @@ export class TableComponent {
 
   order = 'desc';
   propToOrder: string;
+  activeRow: Item;
 
   sort(prop: string) {
     if (this.propToOrder !== prop) {
@@ -103,5 +105,12 @@ export class TableComponent {
     this.propToOrder = prop;
     this.order === 'asc' ? (this.order = 'desc') : (this.order = 'asc');
     this.items = orderItems(this.items, prop, this.order);
+  }
+
+  onClick(item: Item) {
+    console.log(item);
+
+    this.activeRow = item;
+    this.selectRow.emit(item);
   }
 }

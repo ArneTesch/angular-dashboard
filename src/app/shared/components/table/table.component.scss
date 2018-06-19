@@ -37,9 +37,17 @@ table {
   color: #000000;
 }
 
+.table-row {
+  transition: background-color 0.2s ease-in-out;
+}
+
 .table-row:hover {
-  background-color: rgba($color: #0e2a3b, $alpha: 0.05);
+  background-color: rgba($color: #0e2a3b, $alpha: 0.08);
   cursor: pointer;
+}
+
+.table-row.active {
+  background-color: rgba($color: #0e2a3b, $alpha: 0.08);
 }
 
 .table-cell,
